@@ -1,0 +1,23 @@
+
+<div class="header">
+    <div class="inner">
+
+        <!-- logo -->
+        <div class="logo">
+            <img src="__INDEX__/image/image/{$logoPath}" alt="logo" />
+        </div>
+        <div class="nav">
+            <ul>
+                {volist name="cateName" id="vo"}
+                <a style=" text-decoration: none;" href="{php} static $j=0;if($j<5)echo $arrCatePath[$j];$j++ {/php}" class="red">
+                <li>{$vo.name}</li>
+                </a>
+                {/volist}
+            </ul>
+
+        </div>
+        <div class="img11">
+            <p>010-5701-0319</p>
+        </div>
+    </div>
+</div>

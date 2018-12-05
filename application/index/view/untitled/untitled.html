@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>erji</title>
+	<link rel="stylesheet" type="text/css" href="__INDEX__/css/erjis.css">
+</head>
+<style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+            
+            .ischeck {
+                position: relative;
+            }
+            
+            html {
+                overflow-x: hidden;
+            }
+            
+            .isshow {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
+            
+            .contentons li {
+                position: relative;
+            }
+            
+            .box1 {
+                background: red;
+            }
+            
+            .box1 p {
+                color: #fff!important;
+            }
+            
+            .box1 span {
+                color: #fff!important;
+            }
+            
+            .swiper-container {
+                width: 100%;
+                height: 600px;
+                background: red;
+            }
+            
+            .swiper-slide {
+                position: relative;
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                background: red;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+            
+            .swiper-container-horizontal>.swiper-pagination-bullets,
+            .swiper-pagination-custom,
+            .swiper-pagination-fraction {
+                bottom: 10px;
+                position: absolute;
+                left: 37%;
+                box-sizing: border-box;
+            }
+            
+            .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+                margin: 5px;
+            }
+            
+            .swiper-pagination-bullet {
+                width: 80px;
+                height: 8px;
+                display: inline-block;
+                border-radius: 2px;
+                opacity: 1;
+                /*border: 2px solid #fff;*/
+                float: left;
+                background: #fff;
+                /*margin: 20px 0;*/
+            }
+            
+            .swiper-pagination-bullet-active {
+                background: red;
+            }
+            
+            .swiper-button-next,
+            .swiper-container-rtl .swiper-button-prev {
+                display: none;
+            }
+            
+            .swiper-button-next,
+            .swiper-container-rtl .swiper-button-prev {
+                display: none;
+            }
+            
+            .ons {
+                background: red;
+                color: #fff!important;
+            }
+            
+            .ons span {
+                color: #fff!important;
+            }
+        </style>
+<body>
+    <!-- 头部内容 -->
+   {include file="common/top"}
+    <!-- 主题内容 -->
+    <div class="main">
+        <div class="top">
+            <img src="__INDEX__/image/erji.jpg" id="huan1">
+        </div>
+        <!-- 遮罩层 -->
+      
+        <div class="middle">
+            <!-- <div>WHAT&nbsp; CAN&nbsp; WE&nbsp; DO </div> -->
+        </div>
+        <!-- <div class="bottom"></div>
+        <div class="nengzuo">我们能做什么？</div>
+        <div class="fenge"></div> -->
+        <!-- 中间部分 -->
+        <!-- <div class="zhongjian">
+            <div class="m-top" style="margin-left:10%;">
+                <div class="commen pingmian">
+                    <img style="margin-top:5px;" src="__INDEX__/image/pingmian.png">
+                    <div style="margin-top:1px;" class="comm">平面设计</div>
+                </div>
+                <div class="commen yingshi">
+                    <img src="__INDEX__/image/yingshi.png">
+                    <div class="comm">影视与电影</div>
+                </div>
+                <div class="commen donghua">
+                    <img src="__INDEX__/image/donghua.png">
+                    <div class="comm">动画制作</div>
+                </div>
+                <div class="commen wangzhan">
+                    <img src="__INDEX__/image/wangzhan.png">
+                    <div class="comm">网站建设</div>
+                </div>
+                <div class="commen zhanlan">
+                    <img src="__INDEX__/image/zhanlan.png">
+                    <div class="comm">展览展示</div>
+                </div>
+                <div class="commen gongguan">
+                    <img src="__INDEX__/image/gonggong.png">
+                    <div class="comm">公关活动</div>
+                    
+                </div>
+            </div> -->
+        <div class="m-middle"></div>
+        <div class="m-bottom"></div>
+    </div>
+    </div>
+    <div class="clear" style="clear: both">
+
+    </div>
+
+
+    <div class="_one">
+        <div class="inner">
+            <div class="top">
+                <h1>WHAT &nbsp;&nbsp; CAN&nbsp;&nbsp; WE&nbsp;&nbsp; DO</h1>
+                <div style="width: 2%;border-bottom: 2px solid red;margin: 10px auto;"></div>
+                <span>我们能做什么</span>
+                <div style="width: 9%;border-bottom: 1px solid darkgray;margin: 3px auto;"></div>
+            </div>
+
+
+           
+        </div>
+    </div>
+
+
+    <div class="_four">
+        <div class="inner">
+              <div class="top">
+                <h1><b>超级设计成就超级品牌</b></h1>
+                <div style="width: 4%; 20px solid;margin: 10px auto;"></div>
+                <span>品牌的识别的系统的完善与坚定，是品牌的基本精神之所在，也是品牌成功的原动力。好的企业识别系统，<br>能帮助企业在众多竞争品牌中独占鳌头或直接影响到产品销售力</span>
+              
+            </div>
+
+
+            <div class="content">
+                <ul>
+                    {volist name="cateInfo" id="cateInfo"}
+                    <div class="wenzhang"><p class="wen-p">{$cateInfo.title}</p>
+                        <p class="neirong">{$cateInfo.desc}</p>
+                        <p class="neironger">{$cateInfo.content}</p>
+                    </div>
+                    <div class="zhongyi">
+
+                        {php}
+                        foreach($catePic as $value)
+                        {
+                        foreach($value as $v)
+                        {
+                        if($v['aid']==$cateInfo['id'])
+                        {
+                        echo '<img src="__UPLOAD__/'.$v['pic'].'">';
+                        }
+                        }
+                        }
+
+                        {/php}
+
+                    </div>
+                    {/volist}
+
+
+                </ul>
+            </div>
+
+            <div style="text-align:center">
+                    <img src="__INDEX__/image/erjixia.png" width="40" height="40" /><br>
+                    <a>点击更多</a>
+       </div>
+            <div class="clear" style="clear: both;"></div>
+        </div>
+        <div style="width: 4%; 20px solid;margin: 50px auto;"></div>
+        <div class="text" style=" text-align:center;">
+
+        <p style="font-size:30px">没有找到您的服务吗?</p>
+         <p style="font-size:40px;color:red">我们还能提供更多</p>
+         <div style="width: 4%; 20px solid;margin: 20px auto;"></div>
+          <p style="font-size:30px">010-570-10319</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+   {include file="common/footer"}
+
+
+
+</body>
+</html>
